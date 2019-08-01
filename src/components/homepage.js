@@ -2,15 +2,18 @@ import React, { Component } from 'react'
 import jane from '../components/asset/jane.JPG'
 import 'rc-time-picker/assets/index.css';
 import moment from 'moment';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faClock } from '@fortawesome/free-solid-svg-icons'
 import TimePicker from 'rc-time-picker';
+ import Customform from './customform';
+
 
 const showSecond = true;
 
 
+
 export default class Homepage extends Component {
+ 
 
     
     render() {
@@ -27,23 +30,15 @@ export default class Homepage extends Component {
 
                     </div>
 
-                    <div class="col-sm-8 sidebar">
-                        <h4>Set up a meeting</h4><br />
+                    <div className="col-sm-8 sidebar">
+                    <img className="clock" src="https://static.thenounproject.com/png/8004-200.png" alt="clock image"/>
+                    {/* <i class="far fa-clock"></i> */}
+                        <h4 className="set-meeting">Set up a meeting</h4><br />
                         <h6>We'll email your colleagues and remind</h6>
                         <h6>them close to the time</h6>
                         <br />
 
-                        <h6>To:</h6>
-
-                        <input type="text" readonly className="form-control-plaintext" id="staticEmail" placeholder="joanne jane bob"></input>
-                        <hr></hr>
-
-
-                        <input type="text" readonly className="form-control-plaintext" id="staticEmail" placeholder="Subject"></input>
-                        <hr></hr>
-
-                        <input type="text" readonly className="form-control-plaintext" id="staticEmail" placeholder="Location"></input>
-                        <hr></hr>
+                            <Customform></Customform>
 
                         <br />
                         <strong>Duration</strong>
@@ -73,6 +68,7 @@ export default class Homepage extends Component {
                         </div>
 
                         <strong>Time</strong>
+
 
                         <div className="container">
                             <div class="row">

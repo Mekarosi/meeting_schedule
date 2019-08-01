@@ -74,6 +74,10 @@
    color: rgb(189, 124, 124)
  }
 
+ .set-meeting{
+   margin-top: 10px;
+ }
+
 strong{
   color: grey;
 }
@@ -139,8 +143,15 @@ strong{
 
 .form-control-plaintext{
   margin: 0 auto;
-  
-  
+   
+}
+
+.clock{
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgb(177, 168, 168);
 }
 
  /* .row3 input{
